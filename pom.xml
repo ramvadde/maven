@@ -21,6 +21,11 @@
   <artifactId>exec-maven-plugin</artifactId>
   <version>1.6.0</version>
   <configuration>
+   <configuration>
+        <target>10</target>
+        <source>10</source>
+        <release>10</release>
+    </configuration>
    <executable>docker</executable>
     <arguments>
      <argument>build</argument>
@@ -81,11 +86,6 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
-      <configuration>
-          <target>10</target>
-          <source>10</source>
-          <release>10</release>
-      </configuration>
       <scope>test</scope>
     </dependency>
   </dependencies>
